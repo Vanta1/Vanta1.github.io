@@ -3,15 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="{{get_url(path="style.css")}}"/>
   <title>Vanta1</title>
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
+    <div class="content">
       {% block content %} {% endblock %}
     </div>
-  </section>
+    <div id="footer">
+      Site generated using <a href="https://getzola.org">Zola</a> by <a href="https://github.com/Vanta1/Vanta1.github.io">Vanta1</a>
+    </div>
 </body>
 
 </html>
