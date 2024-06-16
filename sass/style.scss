@@ -1,7 +1,9 @@
 @import "reset.scss";
 @import "everforest.scss";
+@import "fonts.scss";
 
 body {
     background-color: $bg_dim;
     color: $fg;
+    font-family: Atkinson Hyperlegible;
 }
