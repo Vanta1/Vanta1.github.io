@@ -4,3 +4,5 @@ date = 2024-06-15
 +++
 
 This is my first blog post.
+
+Some new info i want to add.
