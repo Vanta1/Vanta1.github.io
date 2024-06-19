@@ -5,11 +5,56 @@
 body {
     background-color: $bg_dim;
     color: $fg;
+    font-size: 1.1rem;
     font-family: Atkinson Hyperlegible;
 }
 
-$page-width: 70vw;
+$page-width: 48rem;
 
 .page {
-    margin: 6rem auto 4rem;
+    max-width: $page-width;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    h1 {
+        font-size: 1.35rem;
+    }
+
+    a {
+        color: $fg;
+    }
+    
+    a:visited {
+        color: $fg;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+
+        a {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.content {
+    .title {
+        font-size: 1.6rem;
+    }
+}
+
+.footer {
+    margin-top: 1rem;
+    border-top: 3px dashed $bg2;
+    padding-top: 1rem;
 }

@@ -8,17 +8,21 @@
 </head>
 
 <body>
-  <div class="page-container">
-    <div class="page-before"></div>
-    <div class="page">
-      <div class="content">
-        {% block content %} {% endblock %}
-      </div>
-      <div id="footer">
-        Site generated using <a href="https://getzola.org">Zola</a> by <a href="https://github.com/Vanta1/Vanta1.github.io">Vanta1</a>
+  <div class="page">
+    <div class="header">
+      <h1>Vanta1's temp site</h1>
+      <div class="nav">
+        {% for link in config.extra.nav_links %}
+          <a href={{ link.url }}>{{ link.name }}</a>
+        {% endfor %}
       </div>
     </div>
-    <div class="page-after"></div>
+    <div class="content">
+      {% block content %} {% endblock %}
+    </div>
+    <div class="footer">
+      Site generated using <a href="https://getzola.org">Zola</a> by <a href="https://github.com/Vanta1/Vanta1.github.io">Vanta1</a>
+    </div>
   </div>
 </body>
 

@@ -1,3 +1,10 @@
 base_url = "https://git.vanta.one"
 compile_sass = true
 build_search_index = false
+
+[extra]
+nav_links = [
+    { name = "home", url = "/" },
+    { name = "posts", url = "/blog" },
+    { name = "about", url = "/about" },
+]
