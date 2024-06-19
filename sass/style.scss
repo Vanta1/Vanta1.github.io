@@ -13,8 +13,25 @@ $page-width: 48rem;
 
 .page {
     max-width: $page-width;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration-line: none;
+    color: $blue;
+
+    &:visited {
+        color: $purple;
+    }
+
+    &:hover {
+        background-color: $fg;
+        color: $bg_dim;
+    }
 }
 
 .header {
@@ -24,16 +41,27 @@ $page-width: 48rem;
     flex-wrap: nowrap;
     width: 100%;
 
-    h1 {
-        font-size: 1.35rem;
-    }
-
     a {
         color: $fg;
+
+        &:visited {
+            color: $fg;
+        }
+
+        &:hover {
+            background-color: $bg_dim;
+            color: $purple;
+        }
     }
-    
-    a:visited {
-        color: $fg;
+
+    .site-title {
+        color: $green;
+        &:visited {
+            color: $green;
+        }
+        &:hover {
+            color: $purple;
+        }
     }
 
     .nav {
@@ -41,20 +69,37 @@ $page-width: 48rem;
         flex-direction: row;
         margin-left: auto;
 
-        a {
-            margin-right: 1rem;
+        .nav-item {
+            margin-right: 0.8rem;
         }
     }
 }
 
 .content {
+    margin-bottom: 1rem;
     .title {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        border-bottom: 3px dashed $bg2;
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .subtitle {
+        color: $grey0;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    p:not(:last-child) {
+        margin-bottom: 0.8rem;
     }
 }
 
 .footer {
-    margin-top: 1rem;
+    margin-top: auto;
+    margin-bottom: 1rem;
     border-top: 3px dashed $bg2;
     padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: $grey2;
 }
