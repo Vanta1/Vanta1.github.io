@@ -9,7 +9,7 @@ body {
     font-family: Atkinson Hyperlegible;
 }
 
-$page-width: 48rem;
+$page-width: min(48rem, 100vw);
 
 .page {
     max-width: $page-width;
@@ -23,14 +23,14 @@ $page-width: 48rem;
 a {
     text-decoration-line: none;
     color: $blue;
+    transition: color .2s;
 
     &:visited {
-        color: $purple;
+        color: $blue;
     }
 
     &:hover {
-        background-color: $fg;
-        color: $bg_dim;
+        color: $purple;
     }
 }
 
@@ -70,24 +70,27 @@ a {
         margin-left: auto;
 
         .nav-item {
-            margin-right: 0.8rem;
+            margin-right: .25rem;
         }
     }
 }
 
 .content {
     margin-bottom: 1rem;
+
     .title {
         font-size: 1.8rem;
         border-bottom: 3px dashed $bg2;
         padding-bottom: 0.2rem;
         margin-bottom: 0.2rem;
     }
+
     .subtitle {
         color: $grey0;
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
+
     p:not(:last-child) {
         margin-bottom: 0.8rem;
     }
@@ -102,4 +105,12 @@ a {
     text-align: center;
     font-size: 1rem;
     color: $grey2;
+}
+
+.not-found {
+    font-size: 2rem;
+    color: $red;
+    text-align: center;
+    position: relative;
+    margin-top: 40%;
 }

@@ -21,13 +21,13 @@
         {% for link in config.extra.nav_links %}
           <a class="nav-item" href={{ link.url }}>{{ link.name }}</a>
           {% if not loop.last %}
-            <p class="nav-item">/</p>
+            <p class="nav-item">{{ config.extra.seperator }}</p>
           {% endif %}
         {% endfor %}
       </div>
     </div>
     <div class="content">
-      {% block content %} {% endblock %}
+      {% block content %}{% endblock %}
     </div>
     <div class="footer">
       Site generated using <a href="https://getzola.org">Zola</a> by <a href="https://github.com/Vanta1/Vanta1.github.io">Vanta1</a>

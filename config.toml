@@ -3,6 +3,7 @@ compile_sass = true
 build_search_index = false
 
 [extra]
+seperator = "/"
 nav_links = [
     { name = "home", url = "/" },
     { name = "posts", url = "/blog" },
