@@ -35,7 +35,7 @@ a {
 }
 
 .header {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -67,6 +67,7 @@ a {
     .nav {
         display: flex;
         flex-direction: row;
+        margin-top: 0.01rem; // smth abt the text baseline wasnt looking right, this should fix it but it still feels off to me
         margin-left: auto;
 
         .nav-item {
@@ -82,18 +83,30 @@ a {
         font-size: 1.8rem;
         border-bottom: 3px dashed $bg2;
         padding-bottom: 0.2rem;
-        margin-bottom: 0.2rem;
-    }
-
-    .subtitle {
-        color: $grey0;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
     }
 
     p:not(:last-child) {
         margin-bottom: 0.8rem;
     }
+
+    .blog-info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        p {
+            color: $grey0;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .byline {
+            margin-left: auto;
+        }
+
+        margin-bottom: 1rem;
+    }  
 }
 
 .footer {

@@ -4,6 +4,17 @@
 <h1 class="title">
   {{ page.title }}
 </h1>
-<p class="subtitle">{{ page.date }}</p>
+<div class="blog-info">
+  <p class="subtitle">{% if page.extra.subtitle %}{{page.extra.subtitle}}, {% endif %}{{ page.date }}</p>
+  <p class="byline">
+    <!-- the templating here is a bit gross to look at, but i think it's the best solution -->
+    {% for author in page.authors %}
+      {% if loop.first %}By{% endif %}
+      {{ author }}{% if not loop.last %},{% endif %}
+    {% else %}
+      <!-- leave things blank if no authors -->
+    {% endfor %}
+  </p>
+</div>
 {{ page.content | safe }}
 {% endblock content %}
