@@ -90,6 +90,20 @@ a {
         margin-bottom: 0.8rem;
     }
 
+    .image {
+        font-size: 0.8rem;
+        text-align: center;
+
+        p {
+            margin-top: 0.2rem;
+            color: $grey2;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0.8rem;
+        }
+    }
+
     .blog-info {
         display: flex;
         flex-direction: row;
@@ -141,6 +155,6 @@ a {
         margin-left: auto;
         font-family: Input Mono;
         font-size: 0.9rem;
-        color: $grey2;
+        color: $grey0;
     }
 }
