@@ -4,9 +4,12 @@
 <h1 class="title">
   {{ section.title }}
 </h1>
-<ul> 
+<ul class="blog-index"> 
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    <li>
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      <p class="index-date">{{ page.date }}</p>
+    </li>
   {% endfor %}
 </ul>
 {% endblock content %}

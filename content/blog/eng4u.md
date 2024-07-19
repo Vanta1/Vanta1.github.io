@@ -1,6 +1,6 @@
 +++
 title = "The Power of Words"
-date = 2024-07-09
+date = 2024-07-18
 authors = [ "Cooper Sandys" ]
 
 [extra]

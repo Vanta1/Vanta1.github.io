@@ -71,7 +71,7 @@ a {
         margin-left: auto;
 
         .nav-item {
-            margin-right: .25rem;
+            margin-left: .25rem;
         }
     }
 }
@@ -126,4 +126,21 @@ a {
     text-align: center;
     position: relative;
     margin-top: 40%;
+}
+
+.blog-index {
+    list-style-type: none;
+
+    li {
+        display: flex;
+        margin-bottom: 0.3rem;
+    }
+
+    .index-date {
+        margin-top: 2px;
+        margin-left: auto;
+        font-family: Input Mono;
+        font-size: 0.9rem;
+        color: $grey2;
+    }
 }

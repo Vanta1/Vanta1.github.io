@@ -5,7 +5,10 @@
   {{ page.title }}
 </h1>
 <div class="blog-info">
-  <p class="subtitle">{% if page.extra.subtitle %}{{page.extra.subtitle}}, {% endif %}{{ page.date }}</p>
+  <p class="subtitle">
+    {% if page.extra.subtitle %}{{page.extra.subtitle}}, {% endif %}
+    {{ page.date }}
+  </p>
   <p class="byline">
     <!-- the templating here is a bit gross to look at, but i think it's the best solution -->
     {% for author in page.authors %}
