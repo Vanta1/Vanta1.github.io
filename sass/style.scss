@@ -106,6 +106,10 @@ a {
         margin-bottom: 0.8rem;
     }
 
+    i {
+        font-style: italic;
+    }
+
     .image {
         font-size: 0.8rem;
         text-align: center;
@@ -118,6 +122,17 @@ a {
 
         &:not(:last-child) {
             margin-bottom: 0.6rem;
+        }
+    }
+
+    .interject {
+        width: 100%;
+        padding: 1rem;
+        border: 3px dashed $yellow;
+        margin-bottom: 0.8rem;
+
+        p {
+            margin: 0;
         }
     }
 }
