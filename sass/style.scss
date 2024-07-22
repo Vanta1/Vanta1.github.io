@@ -113,11 +113,22 @@ a {
     .image {
         font-size: 0.8rem;
         text-align: center;
-        margin-top: 1rem;
+
+        img {
+            width: 100%;
+        }
 
         p {
             margin-top: 0.2rem;
             color: $grey2;
+        }
+
+        &:first-child {
+            margin-top: 0.4rem;
+        }
+
+        &:not(:first-child) {
+            margin-top: 1rem;
         }
 
         &:not(:last-child) {
