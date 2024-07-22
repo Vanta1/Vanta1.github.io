@@ -130,9 +130,29 @@ a {
         padding: 1rem;
         border: 3px dashed $yellow;
         margin-bottom: 0.8rem;
+        text-align: center;
 
         p {
             margin: 0;
+        }
+    }
+
+    .quote {
+        width: 100%;
+        padding: 1rem;
+        border: 3px dashed $grey0;
+        margin-bottom: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        .quote-attrib {
+            margin-top: 1rem;
+            margin-left: auto;
         }
     }
 }

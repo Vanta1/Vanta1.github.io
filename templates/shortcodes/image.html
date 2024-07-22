@@ -2,9 +2,9 @@
     <img src="/images/{{ src }}"/>
     {% if attrib %}
         {% if attrib_url %}
-            <p>From <a href="{{ attrib_url }}">{{ attrib }}</a></p>
+            <p class="image-attrib">From <a href="{{ attrib_url }}">{{ attrib }}</a></p>
         {% else %}
-            <p class="img-attribution">{{ attrib }}</p>
+            <p class="image-attrib">{{ attrib }}</p>
         {% endif%}
     {% endif %}
 </div>

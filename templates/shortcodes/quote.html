@@ -1,0 +1,10 @@
+<div class="quote">
+    "{{ body | safe }}"
+    {% if attrib %}
+        {% if attrib_url %}
+            <p class="quote-attrib">— <a href="{{ attrib_url }}">{{ attrib }}</a></p>
+        {% else %}
+            <p class="quote-attrib">— {{ attrib }}</p>
+        {% endif%}
+    {% endif %}
+</div>
