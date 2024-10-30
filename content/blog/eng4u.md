@@ -1,6 +1,6 @@
 +++
 title = "The Power of Words"
-date = 2024-08-28
+date = 2024-10-30
 authors = [ "Cooper Sandys" ]
 
 [extra]
@@ -40,7 +40,7 @@ Let me find my talk<br/>
 So I can teach you about me
 {% end %}
 
-I think that Joe is making it clear here that ‘talk’ means more than spoken word, it means a way of life that her abusers (nuns and other educators at the Shubenacadie school) have stolen from her. What this makes clear to me about the poem is that it is a remarkably compassionate response to that experience, an outstretched hand asking for reconciliation. 
+I think that Joe is making it clear here that ‘talk’ means more than spoken word, it means a way of life that her abusers (nuns and other educators at the Shubenacadie school) have stolen from her. What this says to me about the poem is that it is a remarkably compassionate response to that experience, an outstretched hand asking for reconciliation. 
 
 What Rita Joe is <i>really</i> asking for with her gently offered hand, is a reprieve from the continued echoes of her upbringing in our world. Even though the school is closed now, its teachings are still affecting her. She remembers those lessons all too well, the language she was forced to speak is how she writes about that very experience.
 
