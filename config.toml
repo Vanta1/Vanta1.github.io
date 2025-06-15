@@ -1,4 +1,4 @@
-base_url = "https://git.vanta.one"
+base_url = "https://vanta.one"
 compile_sass = true
 build_search_index = false
 
