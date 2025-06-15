@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://vanta.one/</loc>
+    </url>
+    <url>
+        <loc>https://vanta.one/about/</loc>
+    </url>
+    <url>
+        <loc>https://vanta.one/blog/</loc>
+    </url>
+    <url>
+        <loc>https://vanta.one/blog/first/</loc>
+        <lastmod>2024-06-15</lastmod>
+    </url>
+    <url>
+        <loc>https://vanta.one/blog/second/</loc>
+        <lastmod>2024-06-16</lastmod>
+    </url>
+</urlset>
