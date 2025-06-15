@@ -2,6 +2,8 @@ base_url = "https://vanta.one"
 compile_sass = true
 build_search_index = false
 
+ignored_content = ["*/eng4u.md"]
+
 [extra]
 seperator = "/"
 nav_links = [
